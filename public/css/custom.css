@@ -1,0 +1,79 @@
+/*
+ * Themes
+ *
+ * Apply custom color schemes by adding the appropriate class to the `body`.
+ * Based on colors from Base16: http://chriskempson.github.io/base16/#default.
+ */
+
+body {
+  background-color: #505050;
+  color: #f5f5f5;
+}
+
+a { color: #ff9900; }
+
+/* Red */
+.sidebar,
+.sidebar-toggle:active,
+#sidebar-checkbox:checked ~ .sidebar-toggle {
+  background-color: #202020;
+}
+.masthead-title a,
+.post-title, .page-title,
+.post-title a, .page-title a,
+/* .container a, */
+.sidebar-toggle,
+.related-posts li a:hover {
+  color: #cf6a4c; /* #ff0000; /* #d73737; /* #ac4142; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #9b703f;
+}
+
+/*
+.masthead-title {
+  height: 36px;
+}
+
+.masthead-title a {
+  display: inline;
+  background-image: url('../jewel_48.png');
+  background-repeat: no-repeat;
+  background-size: 42px;
+  height: inherit; min-width: 42px;
+  margin-right: 24px;
+} */
+.masthead-title {
+    background-image: url('../jewel_48.png');
+    background-repeat: no-repeat;
+    min-width: 36px; height: 36px;
+    background-size: 36px;
+    position: relative;
+}
+
+.masthead-title a {
+    position: absolute;
+    top: 0; left: 0;
+    width: 36px; height: 36px;
+}
+
+.masthead-title a h2 {
+    display: none;
+}
+
+.masthead-title small {
+  margin-left: 48px;
+}
+
+/* Orange */
+.theme-base-09 .sidebar,
+.theme-base-09 .sidebar-toggle:active,
+.theme-base-09 #sidebar-checkbox:checked ~ .sidebar-toggle {
+  background-color: #d28445;
+}
+.theme-base-09 .container a,
+.theme-base-09 .sidebar-toggle,
+.theme-base-09 .related-posts li a:hover {
+  color: #d28445;
+}
