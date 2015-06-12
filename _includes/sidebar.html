@@ -5,7 +5,10 @@
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
-    <p>{{ site.description }}</p>
+    <p>
+      <span>#!/usr/bin/env jruby</span>
+      <!--<br>-->
+    </p>
   </div>
 
   <nav class="sidebar-nav">
@@ -25,14 +28,10 @@
       {% endif %}
     {% endfor %}
 
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
-    <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
+    <a class="sidebar-nav-item" href="https://twitter.com/intent/tweet?text=@kbucek ahoy...">Feedback</a>
   </nav>
 
   <div class="sidebar-item">
-    <p>
-      &copy; {{ site.time | date: '%Y' }}. All rights reserved.
-    </p>
+    <p><a href="http://kares.org">&copy;</a> {{ site.time | date: '%Y' }} all rights reserved</p>
   </div>
 </div>
