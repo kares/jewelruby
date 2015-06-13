@@ -22,6 +22,8 @@ div.highlight pre, code {
   background-color: #1e1e1e;
 }
 
+.redish { color: #CB593D; /* #E16F47; /* #C53708; */ }
+
 /* Red */
 .sidebar,
 .sidebar-toggle:active,
