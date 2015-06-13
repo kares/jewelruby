@@ -4,27 +4,43 @@ title: About
 ---
 
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+  Hey! All content is objectively opinionated, feel free to disagree. Carry on!
 </p>
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+JewelRuby's bits and pieces are composed by hand (mostly left) by [kares](http://kares.org).
 
-There are currently two themes built on Poole:
+For some time I wanted to write down notes on the occasional experiments that I
+am seeing or doing, [here][1] [and][2] [there][3]. As these are generally at the
+"native" level (sometimes in <span class="redish">JRuby</span> itself) it's not
+something to feed the docs (who will read those anyways esp. when mimicking not-so
+documented behavior), a (b)log diary seemed the best.
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+[JRuby](http://jruby.org) the precious jewel, the most ambitious JVM language -
+colliding 2 worlds like no other had ever before, brought to us by the magnificent
+[JRuby Team](https://twitter.com/intent/user?screen_name=JRuby){:target="_blank"}.
 
-Learn more and contribute on [GitHub](https://github.com/poole).
-
+<!--
 ## Setup
 
-Some fun facts about the setup of this project include:
+```
+jruby -S irb
+> require 'java'
+ => false
+> $answer = 24
+ => 24
+> scope = org.jruby.embed.LocalContextScope::SINGLETHREAD
+ => #<Java::OrgJrubyEmbed::LocalContextScope:0x338ff9a1>
+> container = org.jruby.embed.ScriptingContainer.new scope
+=> #<Java::OrgJrubyEmbed::ScriptingContainer:0x25af578c>
+> container.runScriptlet 'ANSWER = 42'
+=> 42
+> ANSWER
+=> 24
+``` -->
 
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
+*p.s. ... have <span class="redish">J</span>oy and remember,
+it's <span class="redish">J</span>ust <span class="redish">R</span>uby!*
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+[1]: https://github.com/jruby/jruby-openssl
+[2]: https://github.com/jruby/activerecord-jdbc-adapter
+[3]: https://github.com/jruby/jruby-rack
