@@ -12,6 +12,16 @@ body {
 
 a { color: #ff9900; }
 
+blockquote { color: #c3c3c3; }
+
+tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
+  color: #5f5a60;
+}
+
+div.highlight pre, code {
+  background-color: #1e1e1e;
+}
+
 /* Red */
 .sidebar,
 .sidebar-toggle:active,
@@ -62,8 +72,10 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
 }
 
-.masthead-title small {
-  margin-left: 48px;
+.masthead-title .tagline {
+    margin-left: 48px;
+    color: #c0c0c0;
+    letter-spacing: 0;
 }
 
 /* Orange */
