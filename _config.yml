@@ -7,9 +7,10 @@ relative_permalinks: true
 # Setup
 title:               JewelRuby
 tagline:             '... bytes and babes of <span class="redish">JRuby</span>'
-url:                 http://localhost:4000 # http://lanyon.getpoole.com
+url:                 http://jewelruby.kares.org # http://localhost:4000
 baseurl:             ''
 paginate:            2
+future:              false # prevent generating posts with a future date
 
 # About/contact
 author:
