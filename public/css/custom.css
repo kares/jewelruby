@@ -91,3 +91,13 @@ h1, h2, h3, h4, h5, h6 {
 .theme-base-09 .related-posts li a:hover {
   color: #d28445;
 }
+
+.wide-link {
+  margin-left: 0 !important;
+  margin-right: 1px !important;
+  width: 99% !important;
+  border-radius: 4px;
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 250;
+}
