@@ -24,6 +24,8 @@ div.highlight pre, code {
   background-color: #1e1e1e;
 }
 
+pre code { font-size: 110%; }
+
 .redish { color: #CB593D; /* #E16F47; /* #C53708; */ }
 
 /* Red */
