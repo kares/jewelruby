@@ -7,14 +7,14 @@ tags: "jruby, java-integration, release"
   Features mentioned here are available since JRuby <b>9.0.1.0</b> and <b>1.7.22<!--<sup>*</sup>--></b>
 </div>
 
-JRuby's ["Java Integration"][1] behind the magical `require 'java'` has been a mesmerizing
+JRuby's ["Java Integration"][1], behind the magical `require 'java'`, has been a mesmerizing
 case ever since it was first introduced and stands as a reliable ground for a lot of
-[very][2] [appealing][3] [libraries][4] out there.
+[very][2] [appealing][3] [libraries][4].
 
-Although most the time it's very intuitive e.g. `java.util.ArrayList.new(8)`.
-Sometimes the finest details behind the curtains need real world use-cases to get right.
-While in Ruby, where there's always a single method given a name, in Java method dispatch
-accounts for static parameter types.
+Although most the time it's very intuitive (e.g. `java.util.ArrayList.new 8`),
+sometimes the finest details behind the curtains need real world use-cases to get right.
+Mostly due the fact that in Ruby there's always a single method to call given a name,
+while in Java method dispatch accounts for static parameter types.
 Add automatic [Ruby to Java][5] type conversion on top and things get
 **ambiguous** [every][6] [so][7] [often][8] as JRuby tries to match the right Java method for you.
 
@@ -29,7 +29,7 @@ end
 {% endhighlight %}
 
 The intent is clearly [`listFiles( FileFilter )`][9] as the `java.io.FileFilter`
-functional interface requires an `accept(File pathname)` that takes a single argument.
+(functional) interface requires an `accept(File pathname)` that takes a single argument.
 But what if the block arity changes :
 
 {% highlight ruby %}
@@ -39,12 +39,12 @@ java.io.File.new('.').listFiles do |dir, name|
 end
 {% endhighlight %}
 
-Obviously, in this case (the overloaded) [`listFiles( FilenameFilter )`][10]
-method is meant since `java.io.FilenameFilter` prescribes a method with [2 parameters][11]
+Obviously, in this case the [`listFiles( FilenameFilter )`][10] method is a better
+match since `java.io.FilenameFilter` prescribes a method with [2 parameters][11]
 to be implemented.
 
-The issue also revealed that matching wasn't 100% deterministic on non-unique method
-matches in general (not just those ending up with a proc) and depended on JVM's reflected
+Turns out Java method matching wasn't 100% deterministic with ambiguous overloaded
+methods in general (not just those ending with a proc) and depended on JVM's reflected
 method order, thus expect a lot of [confusing][8] "warnings" to be ironed out.
 It's also why the change is not considered breaking for 1.7.x stable.
 
