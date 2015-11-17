@@ -115,3 +115,12 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 5px;
   color: rgba(255, 255, 255, 0.6);
 }
+
+.bold { font-weight: bold }
+
+.cafe-babe .x { color: #fea3aa }
+.cafe-babe .c { color: #f2a2e8 }
+.cafe-babe .a { color: #f8b88b }
+.cafe-babe .f { color: #faf884 }
+.cafe-babe .e { color: #baed91 }
+.cafe-babe .b { color: #b2cefe }
