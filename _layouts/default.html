@@ -44,7 +44,7 @@
         }, false);
       })(document);
     </script>
-    
+    {% if jekyll.environment != "development" %}
     <script>
       var _paq = _paq || [];
       _paq.push(['trackPageView']);
@@ -58,6 +58,6 @@
       })();
     </script>
     <noscript><p><img src="//piwik-kares.rhcloud.com/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
-
+    {% endif %}
   </body>
 </html>
