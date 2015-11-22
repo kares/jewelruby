@@ -32,3 +32,4 @@ defaults:
 
 # Build
 markdown: redcarpet # handles ``` highlighting compared to kramdown
+highlighter: rouge

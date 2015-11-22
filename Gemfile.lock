@@ -112,6 +112,7 @@ GEM
     rdiscount (2.1.7)
     redcarpet (3.3.2)
     ref (1.0.5)
+    rouge (1.6.2)
     safe_yaml (1.0.4)
     sass (3.4.19)
     terminal-table (1.5.2)
@@ -132,6 +133,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  rouge (<= 1.6.2)
   therubyracer
 
 BUNDLED WITH
