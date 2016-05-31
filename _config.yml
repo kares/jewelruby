@@ -2,7 +2,7 @@
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           none
-relative_permalinks: true
+# relative_permalinks: true # ... GH-pages started failing to build !
 
 # Setup
 title:               JewelRuby
