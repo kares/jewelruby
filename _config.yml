@@ -28,11 +28,12 @@ defaults:
       layout: "post"
 
 gems:
+  - jekyll-paginate
   - jemoji
 
 # Custom vars
 #version:             1.0.0
 
 # Build
-markdown: redcarpet # handles ``` highlighting compared to kramdown
+markdown: kramdown
 highlighter: rouge
