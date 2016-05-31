@@ -27,6 +27,9 @@ defaults:
     values:
       layout: "post"
 
+gems:
+  - jemoji
+
 # Custom vars
 #version:             1.0.0
 

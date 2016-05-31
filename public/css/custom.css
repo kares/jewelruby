@@ -124,3 +124,11 @@ h1, h2, h3, h4, h5, h6 {
 .cafe-babe .f { color: #faf884 }
 .cafe-babe .e { color: #baed91 }
 .cafe-babe .b { color: #b2cefe }
+
+/* overide poole.css' img styling on pages */
+img.emoji {
+  display: inline;
+  max-width: 100%;
+  margin: 0;
+  border-radius: 0;
+}
