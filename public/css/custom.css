@@ -20,7 +20,7 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
   color: #5f5a60;
 }
 
-figure.highlight { display: block; margin: 0; }
+figure.highlight { display: block; margin: 0 0 0.8rem; }
 
 .highlight pre, code {
   background-color: #1e1e1e;
