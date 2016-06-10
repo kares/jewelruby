@@ -44,7 +44,7 @@ faced when serving concurrent requests under JRuby).
 
 Another pool implementation provided is `ActiveRecord::Bogacs::FalsePool` which
 does the expected API, keeps connections in a thread-local but does not do any
-actual pooling on its own. As there's plenty of use-cases where you do not want
+actual pooling on its own. There's plenty of use-cases where you do not want
 pooling or would like to employ an underlying pool outside ActiveRecord's scope.
 
 Under JRuby, using [activerecord-jdbc-adapter][7], the above setup hook and having
