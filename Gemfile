@@ -11,6 +11,7 @@ else
 end
 
 gem 'jekyll-seo-tag'
+gem 'jekyll-sitemap'
 
 gem 'therubyracer', require: nil
 
