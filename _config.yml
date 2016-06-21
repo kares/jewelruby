@@ -14,9 +14,10 @@ future:              false # prevent generating posts with a future date
 
 # About/contact
 author:
-  name:              Karol Buček
-  url:               http://kares.org
-  email:             self@kares.org
+  name: Karol Buček
+  url: http://kares.org
+  email: self@kares.org
+  twitter: kbucek
 
 # Defaults (posts)
 defaults:
@@ -30,6 +31,7 @@ defaults:
 gems:
   - jekyll-paginate
   - jemoji
+  - jekyll-seo-tag
 
 # Custom vars
 #version:             1.0.0

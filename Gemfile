@@ -10,6 +10,8 @@ else
   gem 'github-pages'
 end
 
+gem 'jekyll-seo-tag'
+
 gem 'therubyracer', require: nil
 
 # NOTE: < 1.10 https://github.com/jekyll/jekyll/issues/3970
