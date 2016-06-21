@@ -11,7 +11,7 @@ JRuby's ["Java Integration"][1], behind the magical `require 'java'`, has been a
 case ever since it was first introduced and stands as a reliable ground for a lot of
 [very][2] [appealing][3] [libraries][4].
 
-Although most the time it's very intuitive (e.g. `java.util.ArrayList.new 8`),
+Although most the time it's very intuitive (e.g. `java.util.ArrayList.new(8)`),
 sometimes the finest details behind the curtains need real world use-cases to get right.
 Mostly due the fact that in Ruby there's always a single method to call given a name,
 while in Java method dispatch accounts for static parameter types.
@@ -46,7 +46,7 @@ to be implemented.
 Turns out Java method matching wasn't 100% deterministic with ambiguous overloaded
 methods in general (not just those ending with a proc) and depended on JVM's reflected
 method order, thus expect a lot of [confusing][8] "warnings" to be ironed out.
-It's also why the change is not considered breaking for 1.7.x stable.
+It's also why the change is not considered breaking for JRuby **1.7**.
 
 [1]: https://github.com/jruby/jruby/wiki/CallingJavaFromJRuby
 [2]: https://www.elastic.co/products/logstash
