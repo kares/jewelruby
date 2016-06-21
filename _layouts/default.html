@@ -43,6 +43,13 @@
           checkbox.checked = false;
         }, false);
       })(document);
+
+      (function(document) {
+        var links = document.querySelectorAll('.content .post a');
+        for (var i = 0; i < links.length; i++) { var l = links[i];
+          if ( ! l.target && l.hostname != window.location.hostname) l.target = '_blank';
+        }
+      })(document);
     </script>
     {% if jekyll.environment != "development" %}
     <script>
