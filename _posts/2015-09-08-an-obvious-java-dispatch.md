@@ -1,6 +1,7 @@
 ---
 title: An Obvious Java Dispatch
 tags: "jruby, java-integration, release, jruby-9000, jruby-9.0.1.0"
+description: "Method matching and arity based dispatch with proc-to-interface conversion under JRuby"
 ---
 
 <div class="message">

@@ -1,6 +1,7 @@
 ---
 title: Ruby Arrays and Java Lists
 tags: "jruby, java-integration, release, jruby-9000, jruby-9.1.0.0"
+description: "Java integration improvements to java.util.List and how lists act like Ruby Arrays in JRuby"
 ---
 
 <div class="message">

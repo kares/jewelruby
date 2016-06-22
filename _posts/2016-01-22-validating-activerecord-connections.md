@@ -1,6 +1,7 @@
 ---
 title: Validating ActiveRecord Connections
 tags: "jruby, activerecord, activerecord-jdbc-adapter, rails"
+description: "Concerns around connections being open for long idle periods in ActiveRecord and Rails"
 ---
 
 [ActiveRecord][1] has been around as long as Ruby on Rails and since the framework

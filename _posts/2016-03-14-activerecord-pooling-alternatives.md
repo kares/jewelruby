@@ -1,6 +1,7 @@
 ---
 title: ActiveRecord Pooling Alternatives
 tags: "jruby, activerecord, activerecord-bogacs, activerecord-jdbc-adapter, rails"
+description: "Connection pooling matters in Rails and a solution beyond ActiveRecord's built-in pool"
 ---
 
 Any kind of resource pooling, in general, should not be reflected too much in a
@@ -54,16 +55,6 @@ to be accounted when configuring the underlying data source.
 
 p.s. [**ActiveRecord-Bogacs**][6] was [presented][8] and released at
 <a target="_blank" href="http://kares.org/jrubyconf-2014/#/section-7/page-1" title="JRuby (on Rails) Knacks - JRubyConf 2014">JRubyConf</a>!
-
-<!--
-+  properties:
-+    autoReconnect: true
-+    maxReconnects: 3 # no of reconnects to attempt
-+    initialTimeout: 1 # sec to wait between reconnects
-+    failOverReadOnly: false # not read-only when failing over
-+    connectTimeout: 5000 # ms when establishing a connection
-+    socketTimeout: 30000 # ms for socket operations
--->
 
 [1]: http://guides.rubyonrails.org/v4.2/active_record_basics.html
 [2]: http://api.rubyonrails.org/v4.2/classes/ActiveRecord/ConnectionAdapters/ConnectionPool.html
