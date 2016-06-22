@@ -7,8 +7,10 @@
 
     {% include sidebar.html %}
 
-    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
-         content to avoid any CSS collisions with our real content. -->
+    {% comment %}
+    Wrap is the content to shift when toggling the sidebar.
+    We wrap the content to avoid any CSS collisions with our real content.
+    {% endcomment %}
     <div class="wrap">
       <div class="masthead">
         <div class="container">
@@ -36,10 +38,8 @@
 
         document.addEventListener('click', function(evt) {
           var target = evt.target;
-
           if ( ! checkbox.checked || sidebar.contains(target) ||
              ( target === checkbox || target === toggle ) ) return;
-
           checkbox.checked = false;
         }, false);
       })(document);

@@ -1,13 +1,13 @@
-<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
-     styles, `#sidebar-checkbox` for behavior. -->
+{% comment %}
+target for toggling the sidebar '.sidebar-checkbox' is for regular styles,
+'#sidebar-checkbox' for behavior
+{% endcomment %}
 <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
 
-<!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
     <p>
-      <span>#!/usr/bin/env jruby</span>
-      <!--<br>-->
+      <span>#!/usr/bin/env jruby</span><!--<br>-->
     </p>
   </div>
 
@@ -28,7 +28,7 @@
       {% endif %}
     {% endfor %}
 
-    <a class="sidebar-nav-item" href="https://twitter.com/intent/tweet?text=@kbucek ahoy...">Feedback</a>
+    <a class="sidebar-nav-item" href="https://twitter.com/intent/tweet?text=@{{ site.twitter.username }} ahoy...">Feedback</a>
   </nav>
 
   <div class="sidebar-item">
