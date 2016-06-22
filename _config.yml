@@ -17,7 +17,10 @@ author:
   name: Karol Buček
   url: http://kares.org
   email: self@kares.org
-  twitter: kbucek
+  twitter: kbucek # twitter:creator
+
+twitter:
+  username: kbucek # twitter:site
 
 # Defaults (posts)
 defaults:
