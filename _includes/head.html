@@ -28,4 +28,9 @@
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
 
   {% seo title=false %}
+  {% if page.keywords %}
+  <meta name="keywords" content="{{ page.keywords }}" />
+  {% else %}
+  <meta name="keywords" content="jruby blog,jruby,jewel ruby,ruby on rails,ruby development,open-source,java integration,java,freelance,consulting,freelance developer,back-end engineer,Karol Bucek,kbucek,jruby consulting,migrating,performance tuning,architectural advise" />
+  {% endif %}
 </head>
