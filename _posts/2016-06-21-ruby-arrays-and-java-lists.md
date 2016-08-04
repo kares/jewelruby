@@ -2,7 +2,7 @@
 title: Ruby Arrays and Java Lists
 tags: "jruby, java-integration, release, jruby-9000, jruby-9.1.0.0"
 description: "Java integration improvements to java.util.List and how lists act like Ruby Arrays in JRuby"
-#keywords: "jruby, java-integration, Array, ArrayList, java.util.ArrayList, LinkedList, java.util.LinkedList, sort, ruby_sort"
+keywords: "jruby, java-integration, Array, ArrayList, java.util.ArrayList, LinkedList, java.util.LinkedList, sort, ruby_sort"
 image:
   path: /public/jewel_128.png
   twitter: /public/jewel_128.png

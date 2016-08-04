@@ -2,6 +2,7 @@
 title: ActiveRecord Pooling Alternatives
 tags: "jruby, activerecord, activerecord-bogacs, activerecord-jdbc-adapter, rails"
 description: "Connection pooling matters in Rails and a solution beyond ActiveRecord's built-in pool"
+keywords: "jruby, activerecord, connection pooling, activerecord-bogacs, activerecord-jdbc-adapter, rails, jdbc"
 ---
 
 Any kind of resource pooling, in general, should not be reflected too much in a
