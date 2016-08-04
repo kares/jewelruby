@@ -47,7 +47,14 @@
       (function(document) {
         var links = document.querySelectorAll('.content .post a');
         for (var i = 0; i < links.length; i++) { var l = links[i];
-          if ( ! l.target && l.hostname != window.location.hostname) l.target = '_blank';
+          if ( ! l.target && l.hostname != window.location.hostname ) l.target = '_blank';
+        }
+      })(document);
+
+      (function(document) {
+        var codes = document.querySelectorAll('.content a > code');
+        for (var i = 0; i < codes.length; i++) { var l = codes[i].parentElement;
+          if ( ! l.className ) l.className = 'code';
         }
       })(document);
     </script>

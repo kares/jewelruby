@@ -26,6 +26,10 @@ figure.highlight { display: block; margin: 0 0 0.8rem; }
   background-color: #1e1e1e;
 }
 
+a.code:hover, a.code:focus { /* .code added with JS for a > code elements */
+  color: #bf616a; /* code.style.color */
+}
+
 pre code { font-size: 110%; }
 
 .redish { color: #CB593D; /* #E16F47; /* #C53708; */ }
