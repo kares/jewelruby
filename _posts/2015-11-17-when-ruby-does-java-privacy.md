@@ -2,6 +2,7 @@
 title: When Ruby Does Java Privacy
 tags: "jruby, java-integration, release, jruby-9000, jruby-9.0.3.0, jruby-9.0.4.0"
 description: "Java access rules mapped to Ruby visibility inside modules and classes with JRuby"
+keywords: "jruby, java-integration, private_constant, public, protected, package, modifier, class, constant"
 ---
 
 <div class="message">

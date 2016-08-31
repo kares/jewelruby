@@ -2,6 +2,7 @@
 title: The Dude JRuby-OpenSSL Release
 tags: "jruby-openssl, openssl, release"
 description: "TLS improvements and optional X.509 certificate caching in JRuby's OpenSSL library"
+# keywords: "jruby, jruby-openssl, X.509, certificate, cache, lookup, SSL, session, PKCS5"
 ---
 
 <div class="message">

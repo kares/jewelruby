@@ -2,6 +2,7 @@
 title: JNDI in Rails - Alice in Wonderland
 tags: "activerecord, activerecord-jdbc-adapter, jndi, rails"
 description: "Dealing with no connection available using JNDI in Rails when an initializer talks to the database"
+keywords: "jruby, activerecord, activerecord-jdbc-adapter, jndi, rails, jdbc, configure connection, initializer"
 ---
 
 <div class="message">
