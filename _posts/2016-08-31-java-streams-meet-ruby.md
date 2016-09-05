@@ -79,7 +79,7 @@ puts "loop took: #{Time.now - t} elements: #{result.size}"
 On a final note, using [parallel][3] streaming does not make much sense.
 Although (non-blocking) thread-safe `Enumerator` instances are achievable, parallelizing
 iteration over such won't provide the desired benefit until JRuby's underlying
-implementation details are thread-based synchronizing over returned values.
+(thread-based) implementation details are synchronizing over `next`-ed values.
 
 [0]: http://kares.org/jruby-ji-doc/_index.html
 [1]: https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html
