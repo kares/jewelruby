@@ -43,3 +43,6 @@ gems:
 # Build
 markdown: kramdown
 highlighter: rouge
+
+# custom
+hello: Ahoja

@@ -31,7 +31,7 @@ end
 java_class = Jay.become_java! # a java.lang.Class
 out = java.lang.System.out
 def out.println(str)
-  super str.sub('Hello', 'Ahoja')
+  super str.sub('Hello', '{{ site.hello }}')
 end
 java_class.newInstance.greet 'World'
 {% endhighlight %}
