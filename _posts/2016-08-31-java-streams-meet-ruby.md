@@ -13,7 +13,7 @@ image:
 Java 8 brought some interesting functional aspects to the Java standard library -
 a fairly decent support for transforming streams of data. Ruby, obviously, has its
 own perks to do quite more (as binding and closures are first class) but there's
-no reason to be left out on JRuby.
+no reason to be left out ... on JRuby.
 
 And so, without much fanfare, `Enumerator` implements [`java.util.Iterator`][1] and
 adds a `stream` helper. We've touched on Java streams [previously][2], the same is
@@ -30,7 +30,7 @@ three_even_squares = numbers.each.to_java.stream.
   filter( ->(n) { puts "filtering #{n}"; n % 2 == 0 } ).
   map( ->(n) { puts "  mapping #{n}"; n * n } ).
   limit(3).collect(supplier, accumulator, combiner).
-  to_s # an ArrayList of "[ 4, 16, 36 ]"
+  to_s # an Array of "[ 4, 16, 36 ]"
 {% endhighlight %}
 
 ... or an example with an explicit `Enumerator` calculating fibonacci till the end :
@@ -41,8 +41,9 @@ enum = Enumerator.new do |out|
   loop { prev, sum = sum, prev + sum; out << sum }
 end
 
-enum.to_java.stream.filter( ->(n) { n > 100 } ).
-     limit(10).forEach( ->(n) { puts n } )
+enum.to_java.stream.
+     filter( ->(n) { n > 100 } ).
+     limit(10).forEach { |n| puts n }
 
 # prints 10 numbers from the sequence skipping <= 100
 {% endhighlight %}
@@ -79,7 +80,7 @@ puts "loop took: #{Time.now - t} elements: #{result.size}"
 On a final note, using [parallel][3] streaming does not make much sense.
 Although (non-blocking) thread-safe `Enumerator` instances are achievable, parallelizing
 iteration over such won't provide the desired benefit until JRuby's underlying
-(thread-based) implementation details are synchronizing over `next`-ed values.
+thread-based implementation details are synchronizing over `next`-ed values.
 
 [0]: http://kares.org/jruby-ji-doc/_index.html
 [1]: https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html
