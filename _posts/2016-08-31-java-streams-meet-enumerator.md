@@ -1,7 +1,7 @@
 ---
-title: Java Streams Meet Ruby
+title: Java Streams Meet Enumerator
 tags: "jruby, java-integration, release, jruby-9000, jruby-9.1.3.0"
-description: "JRuby's Enumerator implements java.util.Iterator so it could be turned into a Java stream."
+description: "JRuby's Enumerator implements java.util.Iterator and so it can be turned into a Java stream."
 keywords: "jruby, java-integration, Enumerator, to_enum, java.util.Iterator, spliterator, java.util.stream, stream"
 image:
   path: /public/jewel_128.png
