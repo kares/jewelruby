@@ -56,7 +56,6 @@ fails to execute the intended logic e.g. a block-based implementation for [`Pred
 ends up calling Ruby's [`Kernel#test`][5] instead of the actual body (the bellow
 example would fail).
 
-<span id="stream-example">
 {% highlight ruby %}
 numbers = java.util.Arrays.asList 1, 2, 3, 4, 5, 6, 7, 8
 
@@ -70,7 +69,6 @@ three_even_squares = numbers.stream().
   limit(3).collect(supplier, accumulator, combiner).
   to_s # an ArrayList of "[ 4, 16, 36 ]"
 {% endhighlight %}
-</span>
 
 This has been improved in JRuby 9.1 to always bind concrete (implemented) interface
 methods, besides `method_missing`, to make sure the intended block body is executed
